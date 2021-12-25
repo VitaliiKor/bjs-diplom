@@ -48,7 +48,7 @@ function getCurrencyRate() {
 
 getCurrencyRate();
 
-setInterval(getCurrencyRate(), 50000);
+setInterval(getCurrencyRate, 50000);
 
 moneyManager.addMoneyCallback = ((data) => {
     ApiConnector.addMoney(data, (response) => {
